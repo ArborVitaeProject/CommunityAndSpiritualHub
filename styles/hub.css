@@ -1,0 +1,161 @@
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(38deg, #3b82f6, #06b6d4, #ff8c00, #ffd700);
+    background-size: 400% 400%;
+    -webkit-animation: morphGradient 10s ease infinite;
+    -moz-animation: morphGradient 10s ease infinite;
+    -o-animation: morphGradient 10s ease infinite;
+    animation: morphGradient 10s ease infinite;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes morphGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-moz-keyframes morphGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-o-keyframes morphGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes morphGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    border: 0.5rem solid transparent;
+    border-radius: 1rem;
+    color: #1a1a1a;
+    background: #e5e9f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    --shadow:
+        -.5rem -.5rem 1rem #ffffffbf,
+        .5rem .5rem 1rem #80808080;
+    box-shadow: var(--shadow);
+    outline: none;
+    transition: all 0.1s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button i {
+    font-size: 2.5em;
+}
+
+button span {
+    font-family: system-ui, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+button:hover {
+    color: hsl(10 80% 50%);
+    transform: scale(1.1);
+}
+
+button:focus {
+    box-shadow:
+        var(--shadow),
+        inset .5rem .5rem 1rem #80808080,
+        inset -.5rem -.5rem 1rem #ffffffbf;
+    color: hsl(10 80% 50%);
+}
+
+button:focus>i {
+    font-size: 2.2em;
+}
+
+button:focus>span {
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    button i {
+        font-size: 1.5em;
+    }
+
+    button span {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
