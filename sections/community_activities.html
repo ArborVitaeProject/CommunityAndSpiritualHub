@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Activities</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Community Activities</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Engage with Your Community</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Local Events</span>
+                </button>
+                <div class="details">
+                    <h3>Local Events</h3>
+                    <p>Discover and participate in local community events. Whether it's a festival, a market, or a neighborhood meeting, there's always something happening in your community.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Volunteer Opportunities</span>
+                </button>
+                <div class="details">
+                    <h3>Volunteer Opportunities</h3>
+                    <p>Find ways to give back to your community through volunteering. There are numerous opportunities to make a positive impact and help those in need.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-chalkboard-teacher"></i>
+                    <span>Workshops & Classes</span>
+                </button>
+                <div class="details">
+                    <h3>Workshops & Classes</h3>
+                    <p>Attend workshops and classes to learn new skills and meet like-minded individuals. From cooking classes to coding bootcamps, there's something for everyone.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-running"></i>
+                    <span>Sports & Recreation</span>
+                </button>
+                <div class="details">
+                    <h3>Sports & Recreation</h3>
+                    <p>Join local sports teams or participate in recreational activities. Staying active is a great way to stay healthy and meet new people.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Art & Music</span>
+                </button>
+                <div class="details">
+                    <h3>Art & Music</h3>
+                    <p>Get involved in the local art and music scene. Attend concerts, art shows, and creative workshops to express yourself and appreciate the talents of others.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Environment & Nature</span>
+                </button>
+                <div class="details">
+                    <h3>Environment & Nature</h3>
+                    <p>Participate in activities that promote environmental sustainability and connect with nature. Join clean-up drives, tree planting events, and nature walks.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

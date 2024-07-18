@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Framework</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Legal Framework</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Steps to Create a Trust Aligned with Your Vision</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <span>Define Trust Objectives</span>
+                </button>
+                <div class="details">
+                    <h3>Define Trust Objectives</h3>
+                    <p>Clearly outline the goals of the trust, such as protecting assets related to Godsgreenhouses.org, promoting sustainable organic resource development, and supporting community initiatives like Nu Christian and Anchors of Men.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <span>Choose Trust Type</span>
+                </button>
+                <div class="details">
+                    <h3>Choose Trust Type</h3>
+                    <p>Consider an irrevocable trust for enhanced asset protection against potential legal challenges or creditors, given your concerns about corporate degradation and maintaining sustainability.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-user-friends"></i>
+                    <span>Select Trustees and Beneficiaries</span>
+                </button>
+                <div class="details">
+                    <h3>Select Trustees and Beneficiaries</h3>
+                    <p>Choose trustees who understand and support your vision, possibly individuals involved in your community projects or those with legal and financial expertise.</p>
+                    <p>Define beneficiaries, which could include family members, community organizations, or specific projects like Yeshua Financial.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-file-alt"></i>
+                    <span>Draft the Trust Document</span>
+                </button>
+                <div class="details">
+                    <h3>Draft the Trust Document</h3>
+                    <p>Work with LegalZoom or a legal advisor to draft a comprehensive trust document that includes provisions for asset management, distribution guidelines, and contingencies for changing circumstances.</p>
+                    <p>Ensure the trust document reflects your spiritual and community values, potentially incorporating provisions for charitable giving or support for sustainable practices.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-donate"></i>
+                    <span>Fund the Trust</span>
+                </button>
+                <div class="details">
+                    <h3>Fund the Trust</h3>
+                    <p>Transfer assets relevant to Godsgreenhouses.org, potential future e-commerce ventures, and other initiatives into the trust.</p>
+                    <p>Document all transfers carefully to ensure legal compliance and proper asset protection.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <span>Consider Special Provisions</span>
+                </button>
+                <div class="details">
+                    <h3>Consider Special Provisions</h3>
+                    <p>Include provisions for potential future expansions or new initiatives like Christian clothing lines or community-focused banking services under Yeshua Financial.</p>
+                    <p>Specify any requirements for maintaining alignment with your ethical and spiritual values.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-gavel"></i>
+                    <span>Legal and Financial Review</span>
+                </button>
+                <div class="details">
+                    <h3>Legal and Financial Review</h3>
+                    <p>Have the trust document reviewed by a legal advisor to ensure it meets all legal requirements and effectively protects your assets and interests.</p>
+                    <p>Consider tax implications and seek advice on optimizing financial strategies within the trust framework.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-sync-alt"></i>
+                    <span>Monitor and Update</span>
+                </button>
+                <div class="details">
+                    <h3>Monitor and Update</h3>
+                    <p>Regularly review the trust's performance and make updates as necessary to accommodate changes in laws, your goals, or the community's needs.</p>
+                    <p>Document decisions and maintain clear communication with trustees and beneficiaries to ensure everyone understands their roles and responsibilities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

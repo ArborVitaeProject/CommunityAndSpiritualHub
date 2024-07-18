@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creation</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Content Creation</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Content Creation Resources and Strategies</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span>Writing & Blogging</span>
+                </button>
+                <div class="details">
+                    <h3>Writing & Blogging</h3>
+                    <p>Explore tips and strategies for effective writing and blogging. Learn how to engage your audience with compelling content and improve your writing skills.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <span>Photography & Videography</span>
+                </button>
+                <div class="details">
+                    <h3>Photography & Videography</h3>
+                    <p>Learn the essentials of photography and videography. Discover techniques for capturing stunning visuals and creating engaging video content.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span>Podcasting</span>
+                </button>
+                <div class="details">
+                    <h3>Podcasting</h3>
+                    <p>Dive into the world of podcasting. Find out how to start your own podcast, from recording and editing to publishing and promoting your episodes.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Graphic Design</span>
+                </button>
+                <div class="details">
+                    <h3>Graphic Design</h3>
+                    <p>Explore the principles of graphic design. Learn how to create visually appealing graphics for your content, including social media posts, infographics, and more.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-share-alt"></i>
+                    <span>Social Media Management</span>
+                </button>
+                <div class="details">
+                    <h3>Social Media Management</h3>
+                    <p>Understand the strategies for effective social media management. Learn how to grow your audience, engage with followers, and measure your success across various platforms.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics & Optimization</span>
+                </button>
+                <div class="details">
+                    <h3>Analytics & Optimization</h3>
+                    <p>Discover how to use analytics to measure the success of your content. Learn about optimization techniques to improve your content's reach and impact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

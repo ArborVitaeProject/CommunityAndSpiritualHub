@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Integration</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Spiritual Integration</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Spiritual Integration Practices and Resources</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-praying-hands"></i>
+                    <span>Meditation & Mindfulness</span>
+                </button>
+                <div class="details">
+                    <h3>Meditation & Mindfulness</h3>
+                    <p>Explore various meditation and mindfulness techniques to cultivate a sense of peace and awareness in your daily life.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Spiritual Reading</span>
+                </button>
+                <div class="details">
+                    <h3>Spiritual Reading</h3>
+                    <p>Engage with spiritual texts and literature that inspire and deepen your understanding of your faith and spirituality.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-hands-helping"></i>
+                    <span>Service & Community</span>
+                </button>
+                <div class="details">
+                    <h3>Service & Community</h3>
+                    <p>Learn about opportunities for service and community involvement that align with your spiritual values and foster a sense of connection.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Music & Worship</span>
+                </button>
+                <div class="details">
+                    <h3>Music & Worship</h3>
+                    <p>Discover how music and worship practices can enhance your spiritual life and provide a deeper connection to your faith.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Nature & Spirituality</span>
+                </button>
+                <div class="details">
+                    <h3>Nature & Spirituality</h3>
+                    <p>Find ways to connect with nature as a spiritual practice, appreciating the beauty and wonder of the natural world.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Gratitude & Reflection</span>
+                </button>
+                <div class="details">
+                    <h3>Gratitude & Reflection</h3>
+                    <p>Incorporate gratitude and reflection into your daily routine to cultivate a positive mindset and deepen your spiritual practice.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

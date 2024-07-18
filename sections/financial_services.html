@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Services</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Empowering Your Financial Future</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-university"></i>
+                    <span>Banking Services</span>
+                </button>
+                <div class="details">
+                    <h3>Banking Services</h3>
+                    <p>We offer a range of banking services designed to meet your needs, including savings accounts, checking accounts, and online banking.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>Investment Opportunities</span>
+                </button>
+                <div class="details">
+                    <h3>Investment Opportunities</h3>
+                    <p>Explore various investment opportunities to grow your wealth. Our advisors can help you choose the best options based on your financial goals.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-hand-holding-usd"></i>
+                    <span>Loan Services</span>
+                </button>
+                <div class="details">
+                    <h3>Loan Services</h3>
+                    <p>Need financial assistance? Our loan services include personal loans, business loans, and mortgage loans with competitive rates and flexible terms.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Financial Planning</span>
+                </button>
+                <div class="details">
+                    <h3>Financial Planning</h3>
+                    <p>Our financial planning services help you create a comprehensive strategy to manage your finances, plan for retirement, and achieve your financial goals.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Partnership Programs</span>
+                </button>
+                <div class="details">
+                    <h3>Partnership Programs</h3>
+                    <p>Join our partnership programs to collaborate on community projects and initiatives. Together, we can make a positive impact and support each other's growth.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <span>Support Services</span>
+                </button>
+                <div class="details">
+                    <h3>Support Services</h3>
+                    <p>Our support services provide assistance with financial management, budgeting, and debt counseling to help you stay on track with your financial health.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
