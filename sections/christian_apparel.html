@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Apparel</title>
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <h1>Christian Apparel</h1>
+        <nav>
+            <a href="../index.html">Back to Hub</a>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Express Your Faith Through Fashion</h2>
+            <div class="container">
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-tshirt"></i>
+                    <span>Product Lines</span>
+                </button>
+                <div class="details">
+                    <h3>Product Lines</h3>
+                    <p>Explore a variety of Christian-themed clothing, including t-shirts, hoodies, and accessories that inspire and express your faith.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Design Inspirations</span>
+                </button>
+                <div class="details">
+                    <h3>Design Inspirations</h3>
+                    <p>Our designs are inspired by scripture, Christian symbols, and contemporary art, ensuring that each piece is unique and meaningful.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Store Locations</span>
+                </button>
+                <div class="details">
+                    <h3>Store Locations</h3>
+                    <p>Find our physical store locations to try on apparel in person and experience our community events and gatherings.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-shipping-fast"></i>
+                    <span>Shipping & Returns</span>
+                </button>
+                <div class="details">
+                    <h3>Shipping & Returns</h3>
+                    <p>Learn about our shipping policies, delivery options, and easy return process to ensure your satisfaction with every purchase.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>Sales & Promotions</span>
+                </button>
+                <div class="details">
+                    <h3>Sales & Promotions</h3>
+                    <p>Stay updated with our latest sales and promotional offers to get the best deals on Christian apparel.</p>
+                </div>
+
+                <button onclick="toggleExpand(this)">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <span>Community Initiatives</span>
+                </button>
+                <div class="details">
+                    <h3>Community Initiatives</h3>
+                    <p>Discover how your purchases support various community initiatives and charitable causes, making a positive impact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleExpand(button) {
+            button.classList.toggle('expanded');
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
