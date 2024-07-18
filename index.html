@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub</title>
+    <link rel="stylesheet" href="styles/hub.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Hub</h1>
+    </header>
+    <main>
+        <div class="container">
+            <button onclick="playSoundAndNavigate('sections/web_development.html')">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Web Development</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/content_creation.html')">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>Content Creation</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/spiritual_integration.html')">
+                <i class="fa-solid fa-praying-hands"></i>
+                <span>Spiritual Integration</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/community_activities.html')">
+                <i class="fa-solid fa-users"></i>
+                <span>Community Activities</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/christian_apparel.html')">
+                <i class="fa-solid fa-tshirt"></i>
+                <span>Christian Apparel</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/financial_services.html')">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Financial Services</span>
+            </button>
+            <button onclick="playSoundAndNavigate('sections/legal_framework.html')">
+                <i class="fa-solid fa-gavel"></i>
+                <span>Legal Framework</span>
+            </button>
+        </div>
+    </main>
+    <audio id="clickSound" src="button-click.mp3"></audio>
+    <audio id="hoverSound" src="button-hover.mp3"></audio>
+    <audio id="backgroundMusic" src="hub-background.mp3" loop></audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            backgroundMusic.volume = 0.6;
+            backgroundMusic.play().catch(error => {
+                console.log('Background music playback prevented:', error);
+            });
+
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('mouseover', function() {
+                    if (!navigator.userAgent.includes('Mobile')) {
+                        const hoverSound = document.getElementById('hoverSound');
+                        hoverSound.pause();
+                        hoverSound.currentTime = 0;
+                        hoverSound.play().catch(error => {
+                            console.log('Hover sound playback prevented:', error);
+                        });
+                    }
+                });
+            });
+        });
+
+        function playSoundAndNavigate(url) {
+            const clickSound = document.getElementById('clickSound');
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            clickSound.pause();
+            clickSound.currentTime = 0;
+            clickSound.play().then(() => {
+                backgroundMusic.pause();
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 1500); // 2 seconds delay
+            }).catch(error => {
+                console.log('Click sound playback prevented:', error);
+                window.location.href = url;
+            });
+        }
+    </script>
+</body>
+</html>
